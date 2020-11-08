@@ -1,4 +1,13 @@
-use cupcake;
+DROP DATABASE IF EXISTS cupcake;
+create database cupcake;
+
+USE cupcake;
+
+DROP USER IF EXISTS 'cupcake'@localhost;
+
+create user 'cupcake'@'localhost';
+grant all privileges on cupcake.* to 'cupcake'@'localhost';
+flush privileges;
 
 DROP TABLE IF EXISTS properties;
 CREATE TABLE properties (
