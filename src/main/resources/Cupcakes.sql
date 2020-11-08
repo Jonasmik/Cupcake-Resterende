@@ -104,7 +104,9 @@ WHERE name = "version";
 
 
 INSERT INTO cupcakeBottom (pris, type)
-VALUES (10, "Chokolade"), (10.0, "Vanilje"), (15.0, "Oreo"), (10, "Kakao");
+VALUES (5.00, "Chocolate"), (5.00, "Vanilla"), (5.00, "Nutmeg"), (6.00, "Pistacio"), (7.00, "Almond");
 
 INSERT INTO cupcakeTop (pris, type)
-VALUES (10, "Chokolade"), (10.0, "Vanilje"), (15.0, "Oreo"), (10, "Kakao");
+VALUES (5.00, "Chokolade"), (5.00, "Blueberry"), (5.00, "Rasberry"), (6.00, "Crispy")
+        ,(6.00, "Strawberry"), (7.00, "Rum/Raisin"), (8.00, "Orange")
+        ,(8.00, "Lemon"), (9.00, "Blue cheese");
