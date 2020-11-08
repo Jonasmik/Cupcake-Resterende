@@ -1,4 +1,4 @@
-<%-- 
+<%@ page import="domain.User" %><%--
     Document   : index
     Created on : Aug 22, 2017, 2:01:06 PM
     Author     : kasper
@@ -10,6 +10,15 @@
 <title>Home</title>
 
 <%
+    User user = (User) request.getSession().getAttribute("user");
+    if(user != null){
+        if (user.getRole().equals("admin")){
+            request.getSession().setAttribute("adminrole", null);
+        } else {
+            request.getSession().setAttribute("customerrole", null);
+        }
+        request.getSession().setAttribute("user", null);
+    }
     if (request.getServletContext().getAttribute("notloggedin") == null) {
         request.getServletContext().setAttribute("notloggedin", "notloggedin");
     }
