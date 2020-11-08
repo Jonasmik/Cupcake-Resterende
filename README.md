@@ -11,7 +11,7 @@ Github accounts: AlexanderGitHusig, Jonasmik, CphTobias
 
 Github link: https://github.com/Jonasmik/Cupcake-Resterende
 
-Droplet: 
+Droplet: http://138.197.181.9:8080/Cupcake-Resterende/
 
 ## Download
 

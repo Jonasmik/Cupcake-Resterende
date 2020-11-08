@@ -51,7 +51,7 @@ public class Register extends Command {
                     session.setAttribute("customerrole", user.getRole());
                 }
 
-
+                request.getServletContext().setAttribute("notloggedin", null );
                 session.setAttribute("email", userFactory.getEmail());
                 session.setAttribute("user", user);
                 session.setAttribute("role", user.getRole());
